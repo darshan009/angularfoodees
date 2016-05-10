@@ -9,12 +9,12 @@ angular.module('Foodees', ['ngResource', 'ngMessages', 'ngAnimate', 'ui.router']
       .state('checkout',{
         url: '/checkout',
         templateUrl: 'views/checkout.html',
-        controller: 'CheckoutCntrl'
+        controller: 'CheckoutCtrl'
       })
       .state('account',{
-        url: '/checkout',
+        url: '/account',
         templateUrl: 'views/account.html',
-        controller: 'accountCntrl'
+        controller: 'AccountCtrl'
       });
 
       //by default if nothing works out
