@@ -1,5 +1,5 @@
-angular.modeule('Foodees', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr'])
-  .config(function($stateProvider, $urlRouteProvider){
+angular.module('Foodees', ['ngResource', 'ngMessages', 'ngAnimate', 'ui.router'])
+  .config(function($stateProvider, $urlRouterProvider){
     $stateProvider
       .state('home',{
         url: '/',
@@ -18,5 +18,5 @@ angular.modeule('Foodees', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr'])
       });
 
       //by default if nothing works out
-      $urlRouteProvider.otherwise('/');
+      $urlRouterProvider.otherwise('/');
   })
