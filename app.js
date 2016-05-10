@@ -1,4 +1,4 @@
-angular.modeule('Foodees', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr'])
+angular.module('Foodees', ['ngResource', 'ngMessages', 'ngAnimate', 'toastr'])
   .config(function($stateProvider, $urlRouteProvider){
     $stateProvider
       .state('home',{
