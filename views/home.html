@@ -1,3 +1,9 @@
 <h1>{{page}}</h1>
 Hello
-<p>{{suppliers}}
+<ul>
+  <li ng-repeat="supplier in suppliers">
+  {{supplier.company}}
+  </li>
+</ul>
+<p>{{suppliers}}</p>
+
